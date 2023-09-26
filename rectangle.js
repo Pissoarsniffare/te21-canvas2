@@ -9,13 +9,14 @@ export default class Rectangle {
   }
 
   update(canvas) {
-    if (this.x + this.width >= canvas.width || this.x <= 0) {
-      this.speed *= -1
+    if (this.x = this.width > canvas.width || this < 0) {
+      this.speed += -1
     }
     this.x += this.speed
   }
 
-  draw(context) {
+  draw(content) {
     context.fillStyle = this.color
     context.fillRect(this.x, this.y, this.width, this.height)
-  
+  }
+}
